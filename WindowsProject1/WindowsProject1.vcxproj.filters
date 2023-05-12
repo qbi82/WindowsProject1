@@ -27,9 +27,27 @@
     <ClInclude Include="WindowsProject1.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Gracz.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Car.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WindowsProject1.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Gracz.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Car.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
   </ItemGroup>
@@ -45,10 +63,40 @@
     <Image Include="WindowsProject1.ico">
       <Filter>Pliki zasobów</Filter>
     </Image>
-    <Image Include="..\..\..\..\Downloads\kreski\background.png">
+    <Image Include="Adams.mask.png">
       <Filter>Pliki zasobów</Filter>
     </Image>
-    <Image Include="..\..\..\..\Downloads\kreski\backgground.png">
+    <Image Include="Car.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Car1.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Car2.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Car3.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Car4.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Car5.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="es3-GTŻ.mask.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="es3-GTŻ.stad.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="es3-GTŻ.stad1.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="roblox1.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="wybuch.png">
       <Filter>Pliki zasobów</Filter>
     </Image>
   </ItemGroup>

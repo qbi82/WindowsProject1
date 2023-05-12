@@ -134,22 +134,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Car.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Gracz.h" />
+    <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="WindowsProject1.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Car.cpp" />
+    <ClCompile Include="Gracz.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="WindowsProject1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="WindowsProject1.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Downloads\kreski\backgground.png" />
-    <Image Include="..\..\..\..\Downloads\kreski\background.png" />
+    <Image Include="Adams.mask.png" />
+    <Image Include="Car.png" />
+    <Image Include="Car1.png" />
+    <Image Include="Car2.png" />
+    <Image Include="Car3.png" />
+    <Image Include="Car4.png" />
+    <Image Include="Car5.png" />
+    <Image Include="es3-GTŻ.mask.png" />
+    <Image Include="es3-GTŻ.stad.png" />
+    <Image Include="es3-GTŻ.stad1.png" />
+    <Image Include="roblox1.png" />
     <Image Include="small.ico" />
     <Image Include="WindowsProject1.ico" />
+    <Image Include="wybuch.png" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="ChunkFive-Regular.otf" />
