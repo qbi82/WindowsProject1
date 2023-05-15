@@ -89,10 +89,11 @@ int main()
                                 t2_1.loadFromFile("wybuch.png");
 
 
-                                Sprite sBackground(t1), sCar(t2), sCar2(t3), overlay(t4);
+                                Sprite sBackground(t1), sCar, sCar2(t3), overlay(t4);
                                 sCar2.setPosition(630, 740);
                                 sCar2.setOrigin(22, 22);
                                 sCar2.setColor(Color::Black);
+                                sCar.setTexture(t2);
                                 sCar.setPosition(630, 640);
                                 sCar.setOrigin(22, 22);
                                 overlay.setPosition(0, 0);
@@ -356,7 +357,7 @@ int main()
                                     Vector2f spriteScale = sBackground.getScale();
                                     granice = clock2.getElapsedTime();
 
-
+                                    bool czydotknal = false;
                                     // sprawdzenie, czy samochód znajduje się w granicach toru
                                     if (carPosition.x >= 0 && carPosition.x <= textureSize.x * spriteScale.x
                                         && carPosition.y >= 0 && carPosition.y <= textureSize.y * spriteScale.y)
@@ -366,9 +367,13 @@ int main()
                                         int x = carPosition.x / spriteScale.x;
                                         int y = carPosition.y / spriteScale.y;
                                         Color pixelColor = t1.copyToImage().getPixel(x, y);
+                                        
                                         if (pixelColor.a == 0)
                                         {
-                                            sCar.setTexture(t2_1);
+                                            czydotknal = true;
+                                           
+                                                
+                                         
                                             speed_1 = 0;
                                             acc_1 = 0;
                                             
@@ -397,7 +402,11 @@ int main()
                                         app.draw(overlay);
                                         sCar.setPosition(x_1, y_1);
                                         sCar.setRotation(angle_1 * 180 / 3.1415);
-                                        sCar.setColor(Color::Red);
+                                        if (czydotknal) {
+                                            sCar.setTexture(t2_1);
+                                        }else{ sCar.setColor(Color::Red); }
+                                        
+                                        
                                         sCar2.setPosition(x_2, y_2);
                                         sCar2.setRotation(angle_2 * 180 / 3.1415);
                                         if (okrazenia_ilosc < limit_okrazen) {
